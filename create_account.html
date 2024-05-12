@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <style>
+        :root{
+            --white: #FFFFFF;
+            --black: #000000;
+            --dark: #232830;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+        body{
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+        .quicksand-<uniquifier> {
+        font-family: "Quicksand", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        }
+        .login{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+        }
+        .form-container{
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            height: 100vh;
+        }
+        .title{
+            font-size: var(--lg);
+            font-family: 'Quicksand', sans-serif;
+            margin-bottom: 48px;
+            margin-top: 28px;
+        }
+        .label{
+            font-size: var(--sm);
+            font-weight: 700;
+            margin-bottom: 4px;
+            color: var(--dark);
+        }
+        .input{
+            background-color: var(--text-input-field);
+            border: none;
+            border-radius: 8px;
+            height: 30px;
+            font-size: var(--md);
+            padding: 6px;
+            margin-bottom: 24px;
+        }
+        .input::placeholder{
+            font-family: "Quicksand",sans-serif;
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            justify-items: flex-start;
+            width: 100%;
+            height: 100vh;
+        }
+        .form .inputs-area{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .form .button-area{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        .primary-button{
+            background-color: var(--hospital-green);
+            border: none;
+            border-radius: 12px;
+            height: 50px;
+            font-family: "Quicksand", sans-serif;
+            font-weight: 900;
+            color: var(--white);
+            font-size: var(--md);
+            cursor: pointer;
+            margin-top: 25px;
+            width: 100%;
+        }
+        @media (max-width: 640px){
+            .button-area{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                justify-content: flex-end;
+                margin-bottom: 24px;
+                height: 100%;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <div class="form-container">
+            <h1 class="title">My Account</h1>
+            <form action="/" class="form">
+                <div class="inputs-area">
+                    <label for="name" class="label">Name</label>
+                    <input id="name" class="input" type="text" placeholder="Camila Yokoo">
+                    <label for="email" class="label">Email Address</label>
+                    <input id="email" class="input" type="email" placeholder="camilayokoo@gmail.com">
+                    <label for="password" class="label">Password</label>
+                    <input id="password" class="input" type="password" placeholder="*******">
+                </div>
+                <div class="button-area">
+                    <input type="submit" value="Create account" class="primary-button create-account-button" name="Submit" id="submit">
+                </div>
+            </form>
+
+        </div>
+    </div>
+</body>
+</html>

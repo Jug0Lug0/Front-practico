@@ -1,3 +1,5 @@
 /Platzi_YardSale_Icons
 /Platzi_YardSale_Logos
 .DS_Store
+*.jpg
+/product_images

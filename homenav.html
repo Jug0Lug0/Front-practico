@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        :root{
+            --white: #FFFFFF;
+            --black: #000000;
+            --dark: #232830;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+        body{
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+        .quicksand-<uniquifier> {
+        font-family: "Quicksand", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        }
+        .main-container{
+            margin: 0;
+            place-content: center;
+            padding: 50px;
+        }
+        .product-container{
+            margin: 0;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fill,240px);
+            justify-content: space-between;
+            gap: 24px;
+        }
+        .product-card{
+            width: 240px;
+            margin-bottom: 30px;
+        }
+        .product-img{
+            width: 240px;
+            height: 240px;
+            border-radius: 24px;
+        }
+        .product-info-main{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            height: fit-content;
+            margin: 0;
+            margin-top: 14px;
+            padding: 0;
+            align-items: center;
+        }
+        .product-info-text{
+            display: flex;
+            flex-direction: column;
+            margin; 0;
+            padding: 0;
+            height: auto;
+        }
+        .product-info-action{
+            background: var(--hospital-green);
+            display: flex;
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            margin-left: auto;
+            
+        }
+        .price{
+            margin: 0px;
+            padding: 0px;
+            font-weight: 600;
+            font-family: "Quicksand", sans-serif;
+        }
+        .description{
+            margin: 0;
+            padding: 0;
+            font-weight: 300;
+            font-size: var(--sm);
+        }
+        @media (max-width: 640px){
+            .product-card{
+            width: 140px;
+
+        }
+            .product-img{
+            width: 140px;
+            height: 140px;
+        }
+        .product-container{
+            grid-template-columns: repeat(auto-fill,140px);
+        }
+
+        }
+        .desktop-menu{
+            width: 100px;
+            height: auto;
+            border: 1px solid var(--very-light-pink);
+            border-radius: 6px;
+            padding: 24px;
+        }
+        .desktop-menu a{
+            text-decoration: none;
+        }
+        .desktop-menu ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            bleed: 0;
+        }
+        .desktop-menu ul li{
+            text-align: end;
+            font-weight: 700;
+        }
+        .desktop-menu ul li:last-child{
+            padding-top: 20px;
+            color: var(--hospital-green);
+            border-top: 1px solid var(--very-light-pink);
+            }
+        .desktop-menu ul li:last-child a{
+            color: var(--hospital-green);
+            font-size: var(--sm);
+            margin-bottom: 0px;
+        }
+        .desktop-menu ul li a{
+            color: black;
+            font-size: var(--md);
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="desktop-menu">
+    <ul>
+        <li>
+            <a href="/">My Orders</a>
+        </li>
+        <li>
+            <a href="/">My Account</a>
+        </li>
+        <li>
+            <a href="/">Sign Out</a>
+        </li>
+    </ul>
+</nav>
+
+
+
+
+<!-- Product Section -->
+ <section class="main-container">
+    <div class="product-container">
+        <div class="product-card">
+            <img src="/product_images/yellow_banana.jpg" alt="" class="product-img">
+            <div class="product-info-main">
+                <div class="product-info-text">
+                    <p class="price">$35,00</p>
+                    <p class="description">Round Shelf</p>
+                </div>
+                <figure class="product-info-action">
+                    <img src="/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="" class="add_to_card">
+                </figure>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="/product_images/yellow_banana.jpg" alt="" class="product-img">
+            <div class="product-info-main">
+                <div class="product-info-text">
+                    <p class="price">$35,00</p>
+                    <p class="description">Round Shelf</p>
+                </div>
+                <figure class="product-info-action">
+                    <img src="/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="" class="add_to_card">
+                </figure>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="/product_images/yellow_banana.jpg" alt="" class="product-img">
+            <div class="product-info-main">
+                <div class="product-info-text">
+                    <p class="price">$35,00</p>
+                    <p class="description">Round Shelf</p>
+                </div>
+                <figure class="product-info-action">
+                    <img src="/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="" class="add_to_card">
+                </figure>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="/product_images/yellow_banana.jpg" alt="" class="product-img">
+            <div class="product-info-main">
+                <div class="product-info-text">
+                    <p class="price">$35,00</p>
+                    <p class="description">Round Shelf</p>
+                </div>
+                <figure class="product-info-action">
+                    <img src="/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="" class="add_to_card">
+                </figure>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="/product_images/yellow_banana.jpg" alt="" class="product-img">
+            <div class="product-info-main">
+                <div class="product-info-text">
+                    <p class="price">$35,00</p>
+                    <p class="description">Round Shelf</p>
+                </div>
+                <figure class="product-info-action">
+                    <img src="/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="" class="add_to_card">
+                </figure>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="/product_images/yellow_banana.jpg" alt="" class="product-img">
+            <div class="product-info-main">
+                <div class="product-info-text">
+                    <p class="price">$35,00</p>
+                    <p class="description">Round Shelf</p>
+                </div>
+                <figure class="product-info-action">
+                    <img src="/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="" class="add_to_card">
+                </figure>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="/product_images/yellow_banana.jpg" alt="" class="product-img">
+            <div class="product-info-main">
+                <div class="product-info-text">
+                    <p class="price">$35,00</p>
+                    <p class="description">Round Shelf</p>
+                </div>
+                <figure class="product-info-action">
+                    <img src="/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="" class="add_to_card">
+                </figure>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="/product_images/yellow_banana.jpg" alt="" class="product-img">
+            <div class="product-info-main">
+                <div class="product-info-text">
+                    <p class="price">$35,00</p>
+                    <p class="description">Round Shelf</p>
+                </div>
+                <figure class="product-info-action">
+                    <img src="/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="" class="add_to_card">
+                </figure>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="/product_images/yellow_banana.jpg" alt="" class="product-img">
+            <div class="product-info-main">
+                <div class="product-info-text">
+                    <p class="price">$35,00</p>
+                    <p class="description">Round Shelf</p>
+                </div>
+                <figure class="product-info-action">
+                    <img src="/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="" class="add_to_card">
+                </figure>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="/product_images/yellow_banana.jpg" alt="" class="product-img">
+            <div class="product-info-main">
+                <div class="product-info-text">
+                    <p class="price">$35,00</p>
+                    <p class="description">Round Shelf</p>
+                </div>
+                <figure class="product-info-action">
+                    <img src="/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="" class="add_to_card">
+                </figure>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="/product_images/yellow_banana.jpg" alt="" class="product-img">
+            <div class="product-info-main">
+                <div class="product-info-text">
+                    <p class="price">$35,00</p>
+                    <p class="description">Round Shelf</p>
+                </div>
+                <figure class="product-info-action">
+                    <img src="/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="" class="add_to_card">
+                </figure>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="/product_images/yellow_banana.jpg" alt="" class="product-img">
+            <div class="product-info-main">
+                <div class="product-info-text">
+                    <p class="price">$35,00</p>
+                    <p class="description">Round Shelf</p>
+                </div>
+                <figure class="product-info-action">
+                    <img src="/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="" class="add_to_card">
+                </figure>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="/product_images/yellow_banana.jpg" alt="" class="product-img">
+            <div class="product-info-main">
+                <div class="product-info-text">
+                    <p class="price">$35,00</p>
+                    <p class="description">Round Shelf</p>
+                </div>
+                <figure class="product-info-action">
+                    <img src="/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="" class="add_to_card">
+                </figure>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="/product_images/yellow_banana.jpg" alt="" class="product-img">
+            <div class="product-info-main">
+                <div class="product-info-text">
+                    <p class="price">$35,00</p>
+                    <p class="description">Round Shelf</p>
+                </div>
+                <figure class="product-info-action">
+                    <img src="/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="" class="add_to_card">
+                </figure>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="/product_images/yellow_banana.jpg" alt="" class="product-img">
+            <div class="product-info-main">
+                <div class="product-info-text">
+                    <p class="price">$35,00</p>
+                    <p class="description">Round Shelf</p>
+                </div>
+                <figure class="product-info-action">
+                    <img src="/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="" class="add_to_card">
+                </figure>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="/product_images/yellow_banana.jpg" alt="" class="product-img">
+            <div class="product-info-main">
+                <div class="product-info-text">
+                    <p class="price">$35,00</p>
+                    <p class="description">Round Shelf</p>
+                </div>
+                <figure class="product-info-action">
+                    <img src="/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="" class="add_to_card">
+                </figure>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="/product_images/yellow_banana.jpg" alt="" class="product-img">
+            <div class="product-info-main">
+                <div class="product-info-text">
+                    <p class="price">$35,00</p>
+                    <p class="description">Round Shelf</p>
+                </div>
+                <figure class="product-info-action">
+                    <img src="/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="" class="add_to_card">
+                </figure>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="/product_images/yellow_banana.jpg" alt="" class="product-img">
+            <div class="product-info-main">
+                <div class="product-info-text">
+                    <p class="price">$35,00</p>
+                    <p class="description">Round Shelf</p>
+                </div>
+                <figure class="product-info-action">
+                    <img src="/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="" class="add_to_card">
+                </figure>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="/product_images/yellow_banana.jpg" alt="" class="product-img">
+            <div class="product-info-main">
+                <div class="product-info-text">
+                    <p class="price">$35,00</p>
+                    <p class="description">Round Shelf</p>
+                </div>
+                <figure class="product-info-action">
+                    <img src="/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="" class="add_to_card">
+                </figure>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="/product_images/yellow_banana.jpg" alt="" class="product-img">
+            <div class="product-info-main">
+                <div class="product-info-text">
+                    <p class="price">$35,00</p>
+                    <p class="description">Round Shelf</p>
+                </div>
+                <figure class="product-info-action">
+                    <img src="/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="" class="add_to_card">
+                </figure>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="/product_images/yellow_banana.jpg" alt="" class="product-img">
+            <div class="product-info-main">
+                <div class="product-info-text">
+                    <p class="price">$35,00</p>
+                    <p class="description">Round Shelf</p>
+                </div>
+                <figure class="product-info-action">
+                    <img src="/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="" class="add_to_card">
+                </figure>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="/product_images/yellow_banana.jpg" alt="" class="product-img">
+            <div class="product-info-main">
+                <div class="product-info-text">
+                    <p class="price">$35,00</p>
+                    <p class="description">Round Shelf</p>
+                </div>
+                <figure class="product-info-action">
+                    <img src="/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="" class="add_to_card">
+                </figure>
+            </div>
+        </div>
+       
+    </div>   
+ </section>
+</body>
+</html>

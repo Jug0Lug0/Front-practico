@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+         :root{
+            --white: #FFFFFF;
+            --black: #000000;
+            --dark: #232830;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+        body{
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+        .quicksand-<uniquifier> {
+        font-family: "Quicksand", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        }
+        .my-order{
+            width: 100%;
+            height: 100%;
+            display: grid;
+            place-items: center;
+        }
+        .title{
+            font-size: var(--md);
+            font-family: "Quicksand", sans-serif;
+            margin-bottom: 40px;
+            margin-left: 10px;
+        }
+        .my-order-container {
+            width: 90%;
+        }
+        .my-order-content{
+            background-color: var(--text-input-field);
+            width: 100%;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            font-family: "Quicksand", sans-serif;
+        }
+        .my-order-content p{
+            display: flex;
+            flex-direction: column;
+            justify-items: auto;
+            padding-left: 14px;
+            padding-right: 14px;
+        }
+        .my-order-content p span:nth-child(1){
+            font-weight: 800;
+        }
+        .my-order-content p span:nth-child(2){
+            margin-top: 5px;
+            font-weight: 200;
+            font-size: var(--sm);
+        }
+        .shopping-cart{
+            width: 100%;
+            height: 100px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .shopping-cart img{
+            border-radius: 14px;
+            width:90px ;
+            height:90px;
+            margin-right: 20px;
+        }
+        .shopping-cart :nth-child(3){
+            margin-left: auto;
+            margin-right: 6px;
+            font-weight: 800;
+
+        }
+        .shopping-cart :nth-child(2){
+            font-weight: 400;
+            color: var(--very-light-pink);
+            font-size: var(--md);
+        }
+    </style>
+    <title>My Order</title>
+</head>
+<body>
+    <div class="my-order">
+        <div class="my-order-container">
+            <h1 class="title">My order</h1>
+            <div class="my-order-content">
+                <p>
+                    <span>03.25.21</span>
+                    <span>6 articles</span>
+                </p>
+                <p>
+                    <span>$ 560.00</span>
+                </p>
+            </div>
+            <div class="shopping-cart">
+                <img src="/product_images/yellow_banana.jpg" alt="" srcset="">
+                <p>Platano</p>
+                <p>$ 120,00</p>
+            </div>
+            <div class="shopping-cart">
+                <img src="/product_images/yellow_banana.jpg" alt="" srcset="">
+                <p>Platano</p>
+                <p>$ 120,00</p>
+            </div>
+            <div class="shopping-cart">
+                <img src="/product_images/yellow_banana.jpg" alt="" srcset="">
+                <p>Platano</p>
+                <p>$ 120,00</p>
+            </div>
+            <div class="shopping-cart">
+                <img src="/product_images/yellow_banana.jpg" alt="" srcset="">
+                <p>Platano</p>
+                <p>$ 120,00</p>
+            </div>
+            <div class="shopping-cart">
+                <img src="/product_images/yellow_banana.jpg" alt="" srcset="">
+                <p>Platano</p>
+                <p>$ 120,00</p>
+            </div>
+            <div class="shopping-cart">
+                <img src="/product_images/yellow_banana.jpg" alt="" srcset="">
+                <p>Platano</p>
+                <p>$ 120,00</p>
+            </div>
+            <div class="shopping-cart">
+                <img src="/product_images/yellow_banana.jpg" alt="" srcset="">
+                <p>Platano</p>
+                <p>$ 120,00</p>
+            </div>
+            <div class="shopping-cart">
+                <img src="/product_images/yellow_banana.jpg" alt="" srcset="">
+                <p>Platano</p>
+                <p>$ 120,00</p>
+            </div>
+            <div class="shopping-cart">
+                <img src="/product_images/yellow_banana.jpg" alt="" srcset="">
+                <p>Platano</p>
+                <p>$ 120,00</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

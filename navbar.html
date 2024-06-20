@@ -28,33 +28,33 @@
         font-weight: <weight>;
         }
         .navbar{
-            height: 36px;
+            height: 48px;
             width: 100%;
             display: flex;
             flex-direction: row;
             border-color: var(--very-light-pink);
-            padding-left: 6px;
-            padding-top: 6px;
             border-bottom: 1px solid var(--very-light-pink);
-            align-items: middle;
             justify-content: space-between;
         }
         .navbar-left{
             display: flex;
             flex-direction: row;
             text-align: center;
-            align-items: middle;
+            align-items: center;
+            padding: 8px;
+        }
+        .logo {
+            height: 36px;
         }
         .categories {
             display: flex;
             flex-direction: row;
             list-style: none;
-            padding-left: 40px;
+            margin-left: 40px;
             margin: 0px;
             align-items: center;
             justify-content: space-around;
             height: 100%;
-            bleed: 0;
             font-weight: 500;
         }
         .categories li{
@@ -69,18 +69,56 @@
             text-decoration: none;
             color: var(--very-light-pink);
             margin: 5px;
-            padding: 2px;
+            padding: 6px;
+            width: inherit;
+            height: inherit;
         }
         .categories li a:hover{
             text-decoration: none;
             color: var(--hospital-green);
         }
+        .navbar-right{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+            padding-right: 10px;
+        }
+        .actions{
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            margin: 0px;
+            align-items: center;
+            height: 100%;
+            bleed: 0;
+            font-weight: 500;
+        }
+        .icon_menu{
+            display: none;
+        }
+
+
+        @media (max-width: 640px){
+        .icon_menu{
+            display: block;
+            width: 36px;
+            padding-left: 10px;
+        }
+        .navbar-left ul {
+            display: none;
+        }
+        .navbar-right ul { 
+            display: none;
+        }
+    }
 
     </style>
     <title>My Orders</title>
 </head>
 <body>
 <nav class="navbar">
+    <img class="icon_menu" src="/Platzi_YardSale_Icons/icon_menu.svg" alt="">
     <div class="navbar-left">
         <img class="logo" src="/Platzi_YardSale_Logos/logo_yard_sale.svg" alt="">
         <ul class="categories">
@@ -93,14 +131,13 @@
         </ul>
     </div>
 <div class="navbar-right">
-<span class="account">camilayokoo@gmail.com</span>
 <ul class="actions">
+    <li>camilayokoo@gmail.com </li>
     <li>My orders</li>
     <li>My Account</li>
     <li>Sign Out</li>
 </ul>
 <img class="shopping" src="/Platzi_YardSale_Icons/icon_shopping_cart_notification.svg" alt="">
-<span>2</span>
 </div>
 </nav>
 </body>
